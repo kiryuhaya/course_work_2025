@@ -10,7 +10,7 @@ import requests
 PREDICTOR_URL = os.getenv('PREDICTOR_URL', 'http://127.0.0.1:8000/analyze')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'abracadabra' # Для выгрузки на гитхаб удалил его
+app.config['SECRET_KEY'] = '' # Для выгрузки на гитхаб удалил его
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
